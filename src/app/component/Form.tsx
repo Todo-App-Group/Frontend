@@ -6,9 +6,10 @@ import axios from 'axios';
 const Form = () => {
     const [textOpen , setTextOpen] = useState(false);
     const [task,setTask] = useState('');
+    const [description, setDescription] = useState('');
 
     const handleAddTask = () => {
-        axios.post('http://localhost:3000/add', {task:task})
+        axios.post('http://localhost:3000/add', {task:task, description:description})
         .then(result => console.log(result))
         .catch(err => console.log(err))
     }
@@ -25,7 +26,7 @@ const Form = () => {
             {textOpen && (
             <div className='mt-8 ml-8'>
                 <div><label htmlFor="Body">Body</label></div>
-                <div className='mt-5'><textarea name="Body" placeholder='Task Details' ></textarea></div>
+                <div className='mt-5'><textarea name="Body" placeholder='Task Details' onChange={(e) => setDescription(e.target.value)}></textarea></div>
             </div>
             )}
             <div className='flex mt-8 justify-center mb-8'>

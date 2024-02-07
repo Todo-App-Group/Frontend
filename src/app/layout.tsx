@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
      
       <body className='bg-white p-12'>
+        <div className="mb-10">
         <Navbar/>
+        </div>
         {children}
       </body>
     </html>

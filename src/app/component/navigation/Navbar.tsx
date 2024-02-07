@@ -20,8 +20,9 @@ const Navbar = () => {
                 <SignUpButton/>
             </div>
         </div>
+        
         <div className='flex justify-end'>
-        <div className="cursor-pointer py-10 sm:hidden">
+        <div className="cursor-pointer py-10 lg:hidden">
             <BsList 
             onClick={toggleMenu}
             className="h-8 w-8 text-black  rounded-lg"
