@@ -102,7 +102,7 @@ const DisplayTable = () => {
                         <div>
                           <input type="text" value={todo.task} onChange={(event) => handleInputChange(event, todo._id, 'task')} className='text-black' />
                           <input type="text" value={todo.description} onChange={(event) => handleInputChange(event, todo._id, 'description')} className='text-black' />
-                          <button onClick={() => handleSave(todo._id)}>Save</button>
+                          <button className='bg-green-200 text-black w-10 h-8 rounded-xl text-sm' onClick={() => handleSave(todo._id)}>Save</button>
                         </div>
                       ) : (
                         <div>
