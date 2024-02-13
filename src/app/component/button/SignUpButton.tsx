@@ -12,7 +12,7 @@ const SignUpButton = () => {
 
   return (
     <div>
-        <div className='bg-red-800 text-white w-16 h-9 rounded-full flex justify-center items-center'>
+        <div className='bg-red-800 text-white w-[90px] h-10 rounded-full flex justify-center items-center'>
             <button onClick={handleSignup}>Signup</button>
         </div>
     </div>

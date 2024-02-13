@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body className='bg-white p-12'>
+      <body className='p-12 bg-red-100'>
         <div className="mb-10">
         <Navbar/>
         </div>

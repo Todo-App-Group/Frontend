@@ -4,6 +4,7 @@ import React from 'react'
 import SignUpButton from '../button/SignUpButton'
 import {BsList, BsX} from 'react-icons/bs'
 import { useState } from 'react'
+import Image from 'next/image'
 
 const Navbar = () => {
     const handleScroll = () =>{};
@@ -14,9 +15,21 @@ const Navbar = () => {
   return (
     <div>
         <div className='lg:flex lg:justify-between hidden'>
-            <div>logo</div>
-            <div>items</div>
             <div>
+              <div>
+                <Image src={'/logo.png'} alt='logo' width={150} height={250}/>
+              </div>
+            </div>
+            <div>
+            <div className='flex items-center space-x-10 h-[100px]'>
+                <div>Items</div>
+                <div>Items</div>
+                <div>Items</div>
+                <div>Items</div>
+                <div>Items</div>
+              </div>
+            </div>
+            <div className='mt-10'>
                 <SignUpButton/>
             </div>
         </div>
@@ -43,9 +56,21 @@ const Navbar = () => {
               </div>
             </div>
         <div className='lg:hidden'>
-            <div>logo</div>
-            <div>items</div>
             <div>
+            <div className='mt-[-50px] ml-[-30px]'>
+                <Image src={'/logo.png'} alt='logo' width={150} height={250}/>
+              </div>
+            </div>
+            <div className='mt-10'>
+              <div>
+                <div>Items</div>
+                <div>Items</div>
+                <div>Items</div>
+                <div>Items</div>
+                <div>Items</div>
+              </div>
+            </div>
+            <div className='mt-[80px]'>
                 <SignUpButton/>
             </div>
         </div>
